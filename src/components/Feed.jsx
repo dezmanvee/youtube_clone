@@ -3,6 +3,10 @@ import { Sidebar, Videos } from "./";
 import { fetchFromAPI } from "../utils/api";
 import { useEffect, useState } from "react";
 
+
+//copyright date
+const date = new Date().getFullYear();
+
 const Feed = () => {
   const [selectedCategory, setSelectedCategory] = useState("New");
   const [videos, setVideos] = useState([]);
@@ -30,7 +34,7 @@ const Feed = () => {
           variant="body2"
           sx={{ color: "#fff", mt: 1.5 }}
         >
-          Copyright 2002 YT Media
+          Copyright {date} YT Media
         </Typography>
       </Box>
 
